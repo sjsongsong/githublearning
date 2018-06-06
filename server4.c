@@ -74,8 +74,7 @@ int main(int argc,char **argv)
             {  
                 printf("Recieve Data From Server Failed!\n");  
                 break;  
-            }  
-            printf("#");  
+            } 
             write_leng = fwrite(buf, sizeof(char), recv_len, fp);  
             if (write_leng < recv_len) 
             {  
